@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Micro:bit Reaction Game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Result/Feedback Text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Press Start Game to begin."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultTextView"
+        android:layout_marginTop="16dp"
+        android:text="Start Game"
+        android:textSize="18sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"/>
+
+</RelativeLayout>
