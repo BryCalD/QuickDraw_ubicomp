@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         // Wait for Bluetooth to be ready before attempting to connect
         while (!bluetoothAdapter.isEnabled()) {
             try {
-                Thread.sleep(100); // Small delay to allow Bluetooth to turn on
+                Thread.sleep(500); // Small delay to allow Bluetooth to turn on
             } catch (InterruptedException e) {
                 Log.e(TAG, "Bluetooth enable wait interrupted.", e);
             }
